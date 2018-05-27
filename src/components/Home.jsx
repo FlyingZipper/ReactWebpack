@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 import Layout from './Layout';
 
 const Home = () => (
-  <Layout className="red">
+  <Layout className='red'>
     <p>Hello World of React and Webpack!</p>
     <p>
-      <Link to="/dynamic"> Navigate to Dynamic Page</Link>
+      <Link to='/dynamic'> Navigate to Dynamic Page</Link>
     </p>
   </Layout >
 );

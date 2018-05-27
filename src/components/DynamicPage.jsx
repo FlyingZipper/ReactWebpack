@@ -5,7 +5,7 @@ import Layout from './Layout';
 
 const DynamicPage = () => (
   <Layout>
-    <Header as="h2">Dynamic Page</Header>
+    <Header as='h2'>Dynamic Page</Header>
     <p>This page was loaded asynchronously!!!</p>
   </Layout>
 );

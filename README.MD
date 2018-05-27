@@ -5,3 +5,4 @@ TODO:
     - push sur un git repo sur github
     - lazy loading
     - folder design like other repo
+    - uninstall react-imported-component
