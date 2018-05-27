@@ -5,22 +5,23 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const config = {
     entry: {
-        vendor: ['semantic-ui-react']
+        vendor: ['semantic-ui-react'],
     },
     output: {
         path: commonPaths.outputPath,
-        publicPath: '/'
+        publicPath: '/',
     },
     module: {
         rules: [
             {
-                test: /\.(js)$/,
+                test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
+                resolve: { extensions: [".js", ".jsx"] },
                 use: {
-                    loader: 'babel-loader'
-                }
+                    loader: 'babel-loader',
+                },
             },
-        ]
+        ],
     },
     optimization: {
         splitChunks: {
@@ -29,17 +30,17 @@ const config = {
                     chunks: 'initial',
                     test: 'vendor',
                     name: 'vendor',
-                    enforce: true
-                }
-            }
-        }
+                    enforce: true,
+                },
+            },
+        },
     },
     plugins: [
         new HtmlWebpackPlugin({
             template: 'public/index.html',
-            favicon: 'public/favicon.ico'
-        })
-    ]
+            favicon: 'public/favicon.ico',
+        }),
+    ],
 };
 
 module.exports = config;

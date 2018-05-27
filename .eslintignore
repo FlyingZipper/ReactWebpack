@@ -1,3 +1,4 @@
 /dist
+/build-utils
 /node_modules
 /src/index.js
