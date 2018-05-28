@@ -1,4 +1,6 @@
-TODO:
+**TODO:**
+    
+    - semantic-ui => missing icons
     - styled components
     - redux, axios, redux form, etc... => check my ibs diary & more
     - push sur un git repo sur github
