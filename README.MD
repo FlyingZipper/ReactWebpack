@@ -7,3 +7,4 @@
     - lazy loading
     - folder design like other repo
     - fix lint script
+    - multilang => check suicrux repo
