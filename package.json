@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "file-loader": "^1.1.11",
+    "hawk": "^7.0.7",
     "hoek": "^5.0.3",
     "react": "^16.4.0",
     "react-delay-render": "^0.1.2",
